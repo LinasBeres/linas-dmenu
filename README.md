@@ -2,6 +2,10 @@ dmenu - dynamic menu
 ====================
 dmenu is an efficient dynamic menu for X.
 
+## Patches
+- [alpha](https://tools.suckless.org/dmenu/patches/alpha/)
+- [border](https://tools.suckless.org/dmenu/patches/border/)
+
 
 Requirements
 ------------

@@ -13,7 +13,7 @@ OBJ := $(SRC:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
 .PHONY: options config.h all
 
-all: options $(BIN)
+all: options config.h $(BIN)
 
 options:
 	@echo dmenu build options:
