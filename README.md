@@ -5,6 +5,8 @@ dmenu is an efficient dynamic menu for X.
 ## Patches
 - [alpha](https://tools.suckless.org/dmenu/patches/alpha/)
 - [border](https://tools.suckless.org/dmenu/patches/border/)
+- [case-insensitive](https://tools.suckless.org/dmenu/patches/case-insensitive/)
+- [center](https://tools.suckless.org/dmenu/patches/center/)
 
 
 Requirements
