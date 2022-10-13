@@ -13,6 +13,7 @@ dmenu is an efficient dynamic menu for X.
 - [gridnav](https://tools.suckless.org/dmenu/patches/gridnav/)
 - [line-height](https://tools.suckless.org/dmenu/patches/line-height/)
 - [listfullwidth](https://tools.suckless.org/dmenu/patches/listfullwidth/)
+- [morecolours](https://tools.suckless.org/dmenu/patches/morecolor/) - but my version
 
 
 Requirements

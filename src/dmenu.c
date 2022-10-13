@@ -31,7 +31,7 @@
 
 /* enums */
 enum { SchemeNorm, SchemeSel, SchemeNormHighlight, SchemeSelHighlight,
-       SchemeOut, SchemeLast }; /* color schemes */
+       SchemeOut, SchemeMid, SchemeLast }; /* color schemes */
 
 
 struct item {
@@ -192,13 +192,15 @@ drawhighlights(struct item *item, int x, int y, int maxw)
 
 
 static int
-drawitem(struct item *item, int x, int y, int w)
+drawitem(struct item *item, int x, int y, int w, int i)
 {
 	int r;
 	if (item == sel)
 		drw_setscheme(drw, scheme[SchemeSel]);
 	else if (item->out)
 		drw_setscheme(drw, scheme[SchemeOut]);
+	else if (i % 2 == 1)
+		drw_setscheme(drw, scheme[SchemeMid]);
 	else
 		drw_setscheme(drw, scheme[SchemeNorm]);
 
@@ -239,9 +241,10 @@ drawmenu(void)
 		for (item = curr; item != next; item = item->right, i++)
 			drawitem(
 				item,
-				((i / lines) *  ((mw - x) / columns)),
+				((i / lines) *  ((mw - 0) / columns)),
 				y + (((i % lines) + 1) * bh),
-				(mw - x) / columns
+				(mw - 0) / columns,
+				i
 			);
 	} else if (matches) {
 		/* draw horizontal list */
@@ -253,7 +256,7 @@ drawmenu(void)
 		}
 		x += w;
 		for (item = curr; item != next; item = item->right)
-			x = drawitem(item, x, 0, textw_clamp(item->text, mw - x - TEXTW(">")));
+			x = drawitem(item, x, 0, textw_clamp(item->text, mw - x - TEXTW(">")), 1);
 		if (next) {
 			w = TEXTW(">");
 			drw_setscheme(drw, scheme[SchemeNorm]);
