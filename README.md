@@ -10,6 +10,7 @@ dmenu is an efficient dynamic menu for X.
 - [fuzzymatch](https://tools.suckless.org/dmenu/patches/fuzzymatch/)
 - [fuzzyhighlight](https://tools.suckless.org/dmenu/patches/fuzzyhighlight/)
 - [grid](https://tools.suckless.org/dmenu/patches/grid/)
+- [gridnav](https://tools.suckless.org/dmenu/patches/gridnav/)
 
 
 Requirements
