@@ -15,6 +15,7 @@ dmenu is an efficient dynamic menu for X.
 - [listfullwidth](https://tools.suckless.org/dmenu/patches/listfullwidth/)
 - [morecolours](https://tools.suckless.org/dmenu/patches/morecolor/) - but my version
 - [mouse-support](https://tools.suckless.org/dmenu/patches/mouse-support/)
+- [numbers](https://tools.suckless.org/dmenu/patches/numbers/)
 
 
 Requirements
