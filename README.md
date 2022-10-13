@@ -8,6 +8,7 @@ dmenu is an efficient dynamic menu for X.
 - [case-insensitive](https://tools.suckless.org/dmenu/patches/case-insensitive/)
 - [center](https://tools.suckless.org/dmenu/patches/center/)
 - [fuzzymatch](https://tools.suckless.org/dmenu/patches/fuzzymatch/)
+- [fuzzyhighlight](https://tools.suckless.org/dmenu/patches/fuzzyhighlight/)
 
 
 Requirements
